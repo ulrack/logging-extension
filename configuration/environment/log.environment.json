@@ -1,0 +1,23 @@
+{
+    "logging.allowEmergency": {
+        "default": true
+    },
+    "logging.allowFatal": {
+        "default": true
+    },
+    "logging.allowError": {
+        "default": true
+    },
+    "logging.allowWarning": {
+        "default": true
+    },
+    "logging.allowNotice": {
+        "default": true
+    },
+    "logging.allowInfo": {
+        "default": true
+    },
+    "logging.allowDebug": {
+        "default": true
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "log.file.system.generator": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Generator\\FileSystemGenerator",
+        "parameters": {
+            "resourceManager": "@{services.core.resource.manager}"
+        }
+    },
+    "log.logger": {
+        "class": "\\GrizzIt\\Log\\Component\\Logger\\ConfigurableTransitLogger",
+        "parameters": {
+            "allowEmergency": "@{environment.logging.allowEmergency}",
+            "allowFatal": "@{environment.logging.allowFatal}",
+            "allowError": "@{environment.logging.allowError}",
+            "allowWarning": "@{environment.logging.allowWarning}",
+            "allowNotice": "@{environment.logging.allowNotice}",
+            "allowInfo": "@{environment.logging.allowInfo}",
+            "allowDebug": "@{environment.logging.allowDebug}"
+        }
+    },
+    "log.json.formatter": {
+        "class": "\\GrizzIt\\Log\\Component\\Formatter\\JsonFormatter"
+    },
+    "log.plain.formatter": {
+        "class": "\\GrizzIt\\Log\\Component\\Formatter\\PlainFormatter"
+    },
+    "log.json.filesystem.logger": {
+        "class": "\\GrizzIt\\Log\\Component\\Logger\\FileSystemLogger",
+        "parameters": {
+            "fileSystem": "@{invocations.log.file.system}",
+            "logFormatter": "@{services.log.json.formatter}"
+        }
+    },
+    "log.plain.filesystem.logger": {
+        "class": "\\GrizzIt\\Log\\Component\\Logger\\FileSystemLogger",
+        "parameters": {
+            "fileSystem": "@{invocations.log.file.system}",
+            "logFormatter": "@{services.log.plain.formatter}"
+        }
+    }
+}

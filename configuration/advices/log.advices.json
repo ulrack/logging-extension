@@ -1,0 +1,86 @@
+{
+    "log-parameters.info": {
+        "service": "services.log.logger-plugin.info",
+        "hook": "before"
+    },
+    "log-parameters.debug": {
+        "service": "services.log.logger-plugin.debug",
+        "hook": "before"
+    },
+    "log-parameters.notice": {
+        "service": "services.log.logger-plugin.notice",
+        "hook": "before"
+    },
+    "log-parameters.warning": {
+        "service": "services.log.logger-plugin.warning",
+        "hook": "before"
+    },
+    "log-parameters.error": {
+        "service": "services.log.logger-plugin.error",
+        "hook": "before"
+    },
+    "log-parameters.fatal": {
+        "service": "services.log.logger-plugin.fatal",
+        "hook": "before"
+    },
+    "log-parameters.emergency": {
+        "service": "services.log.logger-plugin.emergency",
+        "hook": "before"
+    },
+    "log-parameters-and-return.info": {
+        "service": "services.log.logger-plugin.info",
+        "hook": "after"
+    },
+    "log-parameters-and-return.debug": {
+        "service": "services.log.logger-plugin.debug",
+        "hook": "after"
+    },
+    "log-parameters-and-return.notice": {
+        "service": "services.log.logger-plugin.notice",
+        "hook": "after"
+    },
+    "log-parameters-and-return.warning": {
+        "service": "services.log.logger-plugin.warning",
+        "hook": "after"
+    },
+    "log-parameters-and-return.error": {
+        "service": "services.log.logger-plugin.error",
+        "hook": "after"
+    },
+    "log-parameters-and-return.fatal": {
+        "service": "services.log.logger-plugin.fatal",
+        "hook": "after"
+    },
+    "log-parameters-and-return.emergency": {
+        "service": "services.log.logger-plugin.emergency",
+        "hook": "after"
+    },
+    "log-exception.debug": {
+        "service": "services.log.logger-plugin.debug",
+        "hook": "around"
+    },
+    "log-exception.info": {
+        "service": "services.log.logger-plugin.info",
+        "hook": "around"
+    },
+    "log-exception.notice": {
+        "service": "services.log.logger-plugin.notice",
+        "hook": "around"
+    },
+    "log-exception.warning": {
+        "service": "services.log.logger-plugin.warning",
+        "hook": "around"
+    },
+    "log-exception.error": {
+        "service": "services.log.logger-plugin.error",
+        "hook": "around"
+    },
+    "log-exception.fatal": {
+        "service": "services.log.logger-plugin.fatal",
+        "hook": "around"
+    },
+    "log-exception.emergency": {
+        "service": "services.log.logger-plugin.emergency",
+        "hook": "around"
+    }
+}

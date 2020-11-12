@@ -1,0 +1,23 @@
+{
+    "log.add.json.filesystem.logger": {
+        "service": "services.log.logger",
+        "method": "addLogger",
+        "parameters": {
+            "logger": "@{services.log.json.filesystem.logger}"
+        }
+    },
+    "log.add.plain.filesystem.logger": {
+        "service": "services.log.logger",
+        "method": "addLogger",
+        "parameters": {
+            "logger": "@{services.log.plain.filesystem.logger}"
+        }
+    },
+    "log.file.system": {
+        "service": "services.log.file.system.generator",
+        "method": "getLogFileSystem",
+        "parameters": {
+            "directory": "var/log"
+        }
+    }
+}

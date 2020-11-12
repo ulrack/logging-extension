@@ -1,0 +1,9 @@
+{
+    "log.log.level.debug": "debug",
+    "log.log.level.info": "info",
+    "log.log.level.notice": "notice",
+    "log.log.level.warning": "warning",
+    "log.log.level.error": "error",
+    "log.log.level.fatal": "fatal",
+    "log.log.level.emergency": "emergency"
+}

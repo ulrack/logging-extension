@@ -1,0 +1,51 @@
+{
+    "log.logger-plugin.debug": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.debug}"
+        }
+    },
+    "log.logger-plugin.info": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.info}"
+        }
+    },
+    "log.logger-plugin.notice": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.notice}"
+        }
+    },
+    "log.logger-plugin.warning": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.warning}"
+        }
+    },
+    "log.logger-plugin.error": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.error}"
+        }
+    },
+    "log.logger-plugin.fatal": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.fatal}"
+        }
+    },
+    "log.logger-plugin.emergency": {
+        "class": "\\Ulrack\\LoggingExtension\\Component\\Plugin\\LoggerPlugin",
+        "parameters": {
+            "logger": "@{services.log.logger}",
+            "logLevel": "@{parameters.log.log.level.emergency}"
+        }
+    }
+}
