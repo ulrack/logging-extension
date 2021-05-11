@@ -17,14 +17,14 @@ class FileSystemGenerator
      *
      * @var ResourceManagerInterface
      */
-    private $resourceManager;
+    private ResourceManagerInterface $resourceManager;
 
     /**
      * Contains the open log directories.
      *
      * @var FileSystemInterface[]
      */
-    private $logDirectories = [];
+    private array $logDirectories = [];
 
     /**
      * Constructor.

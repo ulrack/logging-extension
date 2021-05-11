@@ -1,5 +1,0 @@
-{
-    "add.loggers": {
-        "service": "services.log.logger"
-    }
-}

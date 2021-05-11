@@ -33,24 +33,28 @@ combinations in advices have been made available within this package:
 - log-exception.emergency
 
 In order to add a logger to a point in the application, create a `join-point`
-in a file in `configuration/join-points` with the following contents:
+in a file in `configuration/services` with the following contents:
 ```json
 {
-    "all-endpoint-invocations": {
-        "class": "\\Ulrack\\Web\\Common\\Endpoint\\EndpointInterface",
-        "method": "__invoke",
-        "explicit": false
+    "join-points": {
+        "all-endpoint-invocations": {
+            "class": "\\Ulrack\\Web\\Common\\Endpoint\\EndpointInterface",
+            "method": "__invoke",
+            "explicit": false
+        }
     }
 }
 ```
 
 Then the logger can be add through a `pointcut` with a file in
-`configuration/pointcuts` with the following contents:
+`configuration/services` with the following contents:
 ```json
 {
-    "log-exceptions-on-all-endpoints": {
-        "join-point": "all-endpoint-invocations",
-        "advice": "log-exception.fatal"
+    "pointcuts": {
+        "log-exceptions-on-all-endpoints": {
+            "join-point": "all-endpoint-invocations",
+            "advice": "log-exception.fatal"
+        }
     }
 }
 ```

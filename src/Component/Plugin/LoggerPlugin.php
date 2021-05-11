@@ -19,14 +19,14 @@ class LoggerPlugin implements PluginInterface
      *
      * @var LoggerInterface
      */
-    private $logger;
+    private LoggerInterface $logger;
 
     /**
      * Contains the log level used when logging.
      *
      * @var string
      */
-    private $logLevel;
+    private string $logLevel;
 
     /**
      * Constructor.

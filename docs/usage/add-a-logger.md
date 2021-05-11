@@ -9,13 +9,15 @@ defined in the `invocations` service of this package.
 
 The trigger to add the logger to a configurable transit logger from
 `grizz-it/log`, is added in this package. So the only thing left to do is add
-the logger through a tag. To create the tag, add a file to `configuration/tags`
+the logger through a tag. To create the tag, add a file to `configuration/services`
 with the following contents:
 ```json
 {
-    "add-plain-logger": {
-        "trigger": "triggers.add.loggers",
-        "service": "invocations.log.add.plain.filesystem.logger"
+    "tags": {
+        "add-plain-logger": {
+            "trigger": "triggers.add.loggers",
+            "service": "invocations.log.add.plain.filesystem.logger"
+        }
     }
 }
 ```
@@ -33,4 +35,3 @@ service `services.log.logger`.
 [Toggling log levels](toggling-log-levels.md)
 
 [Add a logger plugin](add-a-logger-plugin.md)
-
